@@ -1,0 +1,30 @@
+/* SCROLL-BAR STYLE */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    visibility: hidden;
+    border-radius: 5px;
+    background: #909090;
+}
+.side-bar:hover::-webkit-scrollbar-thumb {
+    visibility: visible;
+}
+
+
+/* **************************************************************** */
+/* HEADER */
+.nav-bar{
+    justify-content: space-between;
+}
+
+.burger {
+    font-size: 16px;
+    color: #606060;
+}
+
+.logo {
+    width: 150px;
+    gap: 5px;
+}
