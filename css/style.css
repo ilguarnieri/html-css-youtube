@@ -37,7 +37,7 @@ a {
 /* SIDEBAR */
 .side-bar{
     height: calc(100vh - 60px);
-    min-width: 240px;
+    max-width: 240px;
     flex-shrink: 0;
     overflow: auto;
 }
@@ -77,20 +77,6 @@ a {
     width: 24px;
     display: block;
     border-radius: 50%;
-}
-
-.copyright{
-    padding: 20px 30PX;
-    color: #606060;
-}
-
-.menu-item:hover{
-    background: #f0f0f0;
-    cursor: pointer;
-}
-
-.menu-item.active{
-    background-color: #E5E5E5;
 }
 
 

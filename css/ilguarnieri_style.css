@@ -1,5 +1,4 @@
 /* SCROLL-BAR STYLE */
-
 ::-webkit-scrollbar {
     width: 8px;
 }
@@ -27,4 +26,40 @@
 .logo {
     width: 150px;
     gap: 5px;
+}
+
+
+/* **************************************************************** */
+/* SIDEBAR */
+.copyright{
+    padding: 16px 24px;
+    color: #606060;
+}
+
+.menu-item:hover{
+    background: #f0f0f0;
+    cursor: pointer;
+}
+
+.menu-item.active{
+    background-color: #E5E5E5;
+    font-weight: 700;
+}
+
+.side-link{
+    padding: 0 24px;
+    color: #606060;
+}
+
+.side-link ul{
+    padding-top: 20px;
+    flex-wrap: wrap;
+    gap:8px;
+}
+
+.side-link ul li{
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    line-height: 10px;
 }
