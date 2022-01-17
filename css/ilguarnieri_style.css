@@ -192,7 +192,7 @@
 
 .play-list-wrapper{
     flex-grow: 1;
-    background: salmon;
+    overflow: hidden;
 }
 
 /* LIST CATEGOTIE */
@@ -242,4 +242,108 @@
 
 .next-categories i{
     margin-right: 25px;
+}
+
+
+/* PLAY LIST */
+.play-list-wrapper{
+    justify-content: space-between;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    gap: 20px 0;
+    overflow: auto;
+    height: calc(100vh - 120px);
+}
+
+.play-list-item{
+    width: 24%;
+}
+
+.play-list-wrapper ul{
+    display: contents;
+    list-style: none;
+}
+
+.card-header{
+    position: relative;
+}
+
+.card-header img{
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.video-duration{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+    margin: 4px;
+    padding: 1px 4px;
+    border-radius: 3px;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.card-body{
+    align-items: flex-start;
+    padding: 15px 0;
+    gap: 12px;
+}
+
+.avatar_user{
+    width: 57px;
+}
+
+.avatar_user img{
+    border-radius: 50%;
+}
+
+.card-description .video-name{
+    font-size: 16PX;
+    font-weight: BOLD;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+.nick-name .name{
+    font-size: 14px;
+    color: #606060;
+    margin-right: 2px;
+    display: inline;
+}
+
+.nick-name .check{
+    font-size: 13px;
+    color: #606060;
+    display: inline;
+}
+
+.card-description .info-video{
+    color: #606060;
+    margin-top: 5px;
+}
+
+.info-video>div{
+    display: inline-block;
+}
+
+.info-video .point{
+    margin: 0 5px;
+}
+
+.play-list-item .check, .play-list-item .music{
+    display: none;
+}
+
+.user_verific .check{
+    display: inline;
+}
+
+.user_music .music{
+    display: inline;
 }
