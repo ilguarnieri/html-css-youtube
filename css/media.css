@@ -1,0 +1,82 @@
+/* **************************************************************** */
+/* 1330 - 801 collasso */
+
+@media screen and (max-width: 1330px){
+
+    .side-bar .not{
+        display: none;
+    }
+
+    .side-bar{
+        max-width: 72px;
+    }
+
+    .widget__menu .menu-item{
+        flex-direction: column;
+    }
+
+    .widget{
+        padding: 0;
+        border: 0;
+    }
+
+    .side-bar ul li{
+        font-size: 11px;
+     }
+
+     .menu-item .icon {
+        margin: 8px 0;
+    }
+
+    .menu-item.active{
+        background-color: transparent
+    }
+
+    .menu-item:hover{
+        background: #f0f0f0;
+        cursor: pointer;
+    }
+}
+
+
+
+/* **************************************************************** */
+/* < 1140 3 col */
+
+@media screen and (max-width: 1140px){
+
+
+
+}
+
+
+/* **************************************************************** */
+/* < 800 scompare */
+
+@media screen and (max-width: 800px){
+
+
+
+
+
+}
+
+
+
+/* **************************************************************** */
+/* < 890 2 col */
+
+@media screen and (max-width: 890px){
+
+
+    
+}
+
+
+/* **************************************************************** */
+/* < 510 1 col */
+@media screen and (max-width: 510px){
+
+
+    
+}

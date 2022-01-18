@@ -256,6 +256,7 @@
     column-gap: 20px;
     overflow: auto;
     height: calc(100vh - 120px);
+    background-color: #F9F9F9;
 }
   
 .play-list {
