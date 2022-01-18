@@ -13,6 +13,9 @@
     visibility: visible;
 }
 
+.play-list-wrapper::-webkit-scrollbar-thumb {
+    visibility: visible;
+}
 
 /* **************************************************************** */
 /* HEADER */
@@ -32,6 +35,10 @@
     margin: 18px 0;
     width: 90px;
     position: relative;
+}
+
+.logo img{
+    max-width: 100%;
 }
 
 .logo-nation{
@@ -122,6 +129,7 @@
 }
 
 .header-cta .avatar img{
+    max-width: 100%;
     border-radius: 50%;
 }
 
@@ -190,11 +198,6 @@
     overflow: hidden;
 }
 
-.play-list-wrapper{
-    flex-grow: 1;
-    overflow: hidden;
-}
-
 /* LIST CATEGOTIE */
 .categories{
     border-top: 1px solid;
@@ -244,106 +247,128 @@
     margin-right: 25px;
 }
 
-
 /* PLAY LIST */
-.play-list-wrapper{
-    justify-content: space-between;
-    align-content: flex-start;
+.play-list-wrapper {
+    flex-grow: 1;
+    padding: 20px 30px;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 20px 0;
+    column-gap: 20px;
     overflow: auto;
     height: calc(100vh - 120px);
 }
-
-.play-list-item{
-    width: 24%;
-}
-
-.play-list-wrapper ul{
+  
+.play-list {
     display: contents;
-    list-style: none;
 }
-
-.card-header{
+  
+.play-list-item {
+    width: 23%;
+}
+  
+.play-list-item:hover {
+    cursor: pointer;
+}
+  
+.card-header {
+    margin-bottom: 10px;
     position: relative;
 }
+  
+.minute {
+    position: absolute;
+    bottom: 6px;
+    right: 6px;
+    padding: 2px 3px;
+    border-radius: 2px;
+    font-size: 13px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+}
 
-.card-header img{
+.card-header img {
     width: 100%;
     aspect-ratio: 16/9;
+    display: block;
     object-fit: cover;
     object-position: center;
-    display: block;
 }
-
-.video-duration{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    color: white;
-    font-size: 11px;
-    font-weight: bold;
-    margin: 4px;
-    padding: 1px 4px;
-    border-radius: 3px;
-    background-color: rgba(0,0,0,0.8);
-}
-
-.card-body{
+  
+.play-list-item .card-body {
     align-items: flex-start;
-    padding: 15px 0;
-    gap: 12px;
+    gap: 10px;
 }
-
-.avatar_user{
-    width: 57px;
-}
-
-.avatar_user img{
+  
+.card-body img {
+    width: 36px;
     border-radius: 50%;
 }
-
-.card-description .video-name{
-    font-size: 16PX;
-    font-weight: BOLD;
-    text-transform: uppercase;
-    padding-bottom: 10px;
+  
+.info h3 {
+    font-size: 16px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
 }
-
-.nick-name .name{
+  
+.info p {
+    line-height: 18px;
     font-size: 14px;
     color: #606060;
-    margin-right: 2px;
-    display: inline;
 }
 
-.nick-name .check{
+.view{
+    margin-top: 4px;
+}
+  
+.overlay {
+    position: absolute;
+    color: white;
+    background-color: black;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 50px;
+    font-weight: bolder;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-header:hover .overlay {
+    opacity: 0.4;
+}
+
+.info .annuncio{
+    color: white;
     font-size: 13px;
-    color: #606060;
-    display: inline;
+    background-color: #FBC02D;
+    padding: 1px 4px;
+    margin-right: 8px;
+    border-radius: 2px;
 }
 
-.card-description .info-video{
-    color: #606060;
+.info-annuncio{
     margin-top: 5px;
 }
 
-.info-video>div{
-    display: inline-block;
+.info-annuncio p{
+    font-size: 15px;
+    color: #606060;
 }
 
-.info-video .point{
-    margin: 0 5px;
+.card-header .ad{
+    font-size: 15px;
+    padding: 5px;
+    padding-left: 7px;
 }
 
-.play-list-item .check, .play-list-item .music{
-    display: none;
+.card-header .ad_over{
+    font-size: 18px;
 }
 
-.user_verific .check{
-    display: inline;
+.card-header .ad_over .icon_ad{
+    margin-left: 8px;
 }
 
-.user_music .music{
-    display: inline;
+.play-list li{
+    margin-bottom: 45px;
 }
