@@ -52,6 +52,7 @@ a {
 .menu-item {
     padding: 8px 24px;
     align-items: center;
+    transition: background-color 200ms linear;
 }
 
 .menu-item .icon {

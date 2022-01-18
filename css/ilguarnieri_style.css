@@ -29,6 +29,7 @@
 .burger i{
     font-size: 20px;
     color: black;
+    transition: color 200ms linear;
 }
 
 .logo {
@@ -51,6 +52,10 @@
 .header-burger{
     align-items: center;
     gap: 24px;
+}
+
+.new-video, .app-youtube, .notifications{
+    transition: color 200ms linear;
 }
 
 .burger i:hover, .new-video:hover, .app-youtube:hover, .notifications:hover{
@@ -94,6 +99,7 @@
     border-color:  #d9d9d9;
     margin-right: 8px;
     flex-shrink: 0;
+    transition: background-color 200ms linear;
 }
 
 .nav-search i{
@@ -109,6 +115,7 @@
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
+    transition: background-color 200ms linear;
 }
 
 .search-button:hover, .vocal-search:hover{
@@ -126,6 +133,7 @@
 
 .header-cta .avatar{
     width: 32px;
+    transition: filter 200ms linear;
 }
 
 .header-cta .avatar img{
@@ -152,6 +160,10 @@
 
 .header-burger>div:hover, .nav-search>div:hover, .header-cta>div:hover {
     cursor: pointer;
+}
+
+.header-cta .avatar:hover{
+    filter: grayscale(0.5);
 }
 
 
@@ -190,6 +202,20 @@
     line-height: 10px;
 }
 
+.menu-item{
+    position: relative;
+}
+
+.widget .online::after{
+    content: '';
+    display: block;
+    position: absolute;
+    right: 15px;
+    background-color: #0A54CE;
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+}
 
 /* **************************************************************** */
 /* MAIN */
@@ -222,6 +248,10 @@
     border: 1px solid #d9d9d9;
     white-space: nowrap;
     cursor: pointer;
+}
+
+.active_cat ~ li:hover{
+    transition: background-color 200ms linear;    
 }
 
 .active_cat ~ li:hover{
@@ -298,6 +328,7 @@
 .play-list-item .card-body {
     align-items: flex-start;
     gap: 10px;
+    position: relative;
 }
   
 .card-body img {
@@ -332,13 +363,14 @@
     font-weight: bolder;
     align-items: center;
     justify-content: center;
+    transition: opacity 200ms linear;
 }
 
 .card-header:hover .overlay {
     opacity: 0.4;
 }
 
-.info .annuncio{
+.info .annuncio_bar{
     color: white;
     font-size: 13px;
     background-color: #FBC02D;
@@ -366,10 +398,32 @@
     font-size: 18px;
 }
 
-.card-header .ad_over .icon_ad{
+.card-header .ad_over i{
     margin-left: 8px;
 }
 
 .play-list li{
     margin-bottom: 45px;
+}
+
+.card-body .cta_ad{
+    font-size: 15px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 35px;
+    transition: background-color 200ms linear;
+}
+
+.card-body .cta_ad:hover{
+    background-color: #e0e0e0;
+
+}
+
+.card-body .info-ad{
+    padding-right: 50px;
 }
