@@ -26,5 +26,5 @@ Cʀᴇᴀᴛᴇ YᴏᴜTᴜʙᴇ ʜᴏᴍᴇᴩᴀɢᴇ - ᴅᴇꜱᴋᴛᴏᴩ 
 
 ## 👨‍💻 Tecnologies, addons and plugins used:
 - HTML;
-- SCSS;
+- CSS;
 - [Font Awesome](https://fontawesome.com "Font Awesome's Homepage") for some icons.
