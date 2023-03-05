@@ -1,0 +1,167 @@
+/* **************************************************************** */
+/* 1330 - 801 */
+
+@media screen and (max-width: 1330px){
+
+    .side-bar .not{
+        display: none;
+    }
+
+    .side-bar{
+        max-width: 72px;
+    }
+
+    .widget__menu .menu-item{
+        flex-direction: column;
+    }
+
+    .widget{
+        padding: 0;
+        border: 0;
+    }
+
+    .side-bar ul li{
+        font-size: 11px;
+     }
+
+     .menu-item .icon {
+        margin: 8px 0;
+    }
+
+    .menu-item.active{
+        background-color: transparent
+    }
+
+    .menu-item:hover{
+        background: #f0f0f0;
+        cursor: pointer;
+    }
+
+    .menu-item {
+        padding-left: 26px;
+    }
+}
+
+
+
+/* **************************************************************** */
+/* < 1140 */
+
+@media screen and (max-width: 1140px){
+    .play-list-item {
+        width: 31%;
+    }
+}
+
+
+/* **************************************************************** */
+/* < 890  */
+
+@media screen and (max-width: 890px){
+    .play-list-item {
+        width: 48%;
+    }    
+}
+
+
+/* **************************************************************** */
+/* < 800 */
+
+@media screen and (max-width: 800px){
+    .not_800{
+        display: none;
+    }
+}
+
+
+
+/* **************************************************************** */
+/* < 600 */
+
+@media screen and (max-width: 656px){
+    .nav-bar{
+        padding: 0 15px;
+    }
+
+    .search-bar{
+        display: none;
+    }
+
+    .search-button, .vocal-search{
+        background-color: transparent;
+        border: 0;
+    }
+
+    .search-button:hover, .vocal-search:hover{
+        background-color: transparent;  
+    }    
+
+    .nav-search{
+        justify-content: flex-end;
+    }
+
+    .search-button, .vocal-search{
+        height: 0;
+        width: 0;
+    }
+
+    .search-button{
+        margin-right: 38px;
+    }
+
+    .header-cta{
+        gap: 25px;
+    }
+
+    .burger i:hover, .new-video:hover, .app-youtube:hover, .notifications:hover{
+        color: black;
+    }
+}
+
+
+/* **************************************************************** */
+/* < 600 */
+
+@media screen and (max-width: 600px){
+    .play-list-wrapper{
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+
+/* **************************************************************** */
+/* < 510 */
+
+@media screen and (max-width: 510px){
+    .play-list-item {
+        width: 90%;
+    }      
+}
+
+
+
+/* **************************************************************** */
+/* < 470 */
+
+@media screen and (max-width: 470px){
+
+    .vocal-search, .notifications{
+        display: none;
+    }
+    .search-button{
+        margin-right: 10px;
+    }
+}
+
+
+
+/* **************************************************************** */
+/* < 380 */
+
+@media screen and (max-width: 380px){
+
+    .nav-bar .new-video{
+        display: none;
+    }
+}
